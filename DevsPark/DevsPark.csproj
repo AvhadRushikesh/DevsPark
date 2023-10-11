@@ -53,9 +53,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="MVVM\Models\" />
-	  <Folder Include="MVVM\ViewModel\" />
-	  <Folder Include="MVVM\Views\" />
+	  <Folder Include="MVVM\ViewModels\" />
+	  <Folder Include="Utilities\" />
+	  <Folder Include="Search\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MVVM\Pages\AppShell.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
