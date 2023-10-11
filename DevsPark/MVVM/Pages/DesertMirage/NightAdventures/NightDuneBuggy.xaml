@@ -3,11 +3,9 @@
     x:Class="DevsPark.MVVM.Pages.DesertMirage.NightAdventures.NightDuneBuggy"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="NightDuneBuggy">
-    <VerticalStackLayout>
-        <Label
-            HorizontalOptions="Center"
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" />
-    </VerticalStackLayout>
+    xmlns:views="clr-namespace:DevsPark.MVVM.Pages"
+    Title="Night Dune Buggy"
+    BackgroundColor="#FF808080">
+
+    <views:TemplateView />
 </ContentPage>
