@@ -14,6 +14,13 @@
     FlyoutBackgroundImage="park_background.png"
     FlyoutBackgroundImageAspect="AspectFill">
 
+    <Shell.FlyoutBackdrop>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0.1" Color="#8A2387" />
+            <GradientStop Offset="0.6" Color="#E94057" />
+        </LinearGradientBrush>
+    </Shell.FlyoutBackdrop>
+
     <Shell.FlyoutIcon>
         <FontImageSource
             FontFamily="Icons"
