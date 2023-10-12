@@ -7,8 +7,8 @@
     Title="Frozen Drinks Bar"
     BackgroundColor="{StaticResource BGColor}">
 
-    <StackLayout>
+    <Grid>
         <views:TemplateView />
-    </StackLayout>
+    </Grid>
 
 </ContentPage>

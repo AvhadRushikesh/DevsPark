@@ -7,8 +7,8 @@
     Title="Snow boarding"
     BackgroundColor="{StaticResource BGColor}">
 
-    <StackLayout>
+    <Grid>
         <views:TemplateView />
-    </StackLayout>
+    </Grid>
 
 </ContentPage>
