@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DevsPark.MVVM.Models
 {
-    internal class FeaturedPromotion
+    public class FeaturedPromotion
     {
+        public int BusinessId { get; set; }
+        public string BusinessName { get; set; }
+        public string Image { get; set; }
+        public string Description { get; set; }
     }
 }

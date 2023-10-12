@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using DevsPark.MVVM.Pages.DesertMirage.NightAdventures;
+using DevsPark.MVVM.ViewModels;
+using Microsoft.Extensions.Logging;
 
 namespace DevsPark
 {
@@ -21,6 +23,8 @@ namespace DevsPark
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddTransient<NightDuneBuggy>();
+            builder.Services.AddTransient<PlacesViewModel>();
 
             return builder.Build();
         }

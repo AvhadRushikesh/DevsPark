@@ -8,4 +8,5 @@
     BackgroundColor="#FF808080">
 
     <views:TemplateView />
+
 </ContentPage>

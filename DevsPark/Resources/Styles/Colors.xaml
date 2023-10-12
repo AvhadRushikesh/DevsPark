@@ -39,4 +39,8 @@
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
+    <Color x:Key="Footer">#E9ECEF</Color>
+    <Color x:Key="BGColor">#F6F4F5</Color>
+    <Color x:Key="IconColor">#000000</Color>
+
 </ResourceDictionary>
