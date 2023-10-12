@@ -113,9 +113,9 @@ namespace DevsPark.MVVM.ViewModels
         }
 
         [RelayCommand]
-        public Task OpenFlyout()
+        public async Task OpenFlyout()
         {
-            throw new NotImplementedException();
+            Shell.Current.FlyoutIsPresented = true;
         }
 
         [RelayCommand]
