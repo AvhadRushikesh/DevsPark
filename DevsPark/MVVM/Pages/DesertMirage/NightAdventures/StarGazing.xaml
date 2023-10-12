@@ -7,6 +7,8 @@
     Title="Star Gazing"
     BackgroundColor="{StaticResource BGColor}">
 
-    <views:TemplateView />
+    <StackLayout>
+        <views:TemplateView />
+    </StackLayout>
 
 </ContentPage>

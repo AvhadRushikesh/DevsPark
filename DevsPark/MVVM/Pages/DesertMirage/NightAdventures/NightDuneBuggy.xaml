@@ -7,6 +7,8 @@
     Title="Night Dune Buggy"
     BackgroundColor="#FF808080">
 
-    <views:TemplateView />
+    <Grid>
+        <views:TemplateView />
+    </Grid>
 
 </ContentPage>
