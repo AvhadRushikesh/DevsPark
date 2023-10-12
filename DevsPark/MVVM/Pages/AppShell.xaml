@@ -56,7 +56,7 @@
         </Grid>
     </Shell.FlyoutFooter>
 
-    <FlyoutItem Title="Desert Mirage" FlyoutDisplayOptions="AsMultipleItems">
+    <FlyoutItem Title="Desert Mirage">
         <FlyoutItem.Icon>
             <FontImageSource
                 FontFamily="Icons"
