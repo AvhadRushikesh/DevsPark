@@ -12,6 +12,12 @@
     xmlns:snowActivities="clr-namespace:DevsPark.MVVM.Pages.Frozen.SnowActivities"
     xmlns:utilities="clr-namespace:DevsPark.Utilities">
 
+    <Shell.FlyoutIcon>
+        <FontImageSource
+            FontFamily="Icons"
+            Glyph="{x:Static utilities:IconFont.Logo}"
+            Color="{StaticResource IconColor}" />
+    </Shell.FlyoutIcon>
 
     <FlyoutItem Title="Desert Mirage">
         <FlyoutItem.Icon>
