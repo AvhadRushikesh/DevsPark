@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:DevsPark.MVVM.Pages"
     Title="Snow boarding"
-    BackgroundColor="Gray">
+    BackgroundColor="{StaticResource BGColor}">
 
     <views:TemplateView />
 
