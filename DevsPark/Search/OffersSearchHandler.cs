@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,21 @@ namespace DevsPark.Search
                     .Where(offer => offer.OfferName.ToLower().Contains(newValue.ToLower()))
                     .ToList();
             }
+        }
+
+        protected async override void OnItemSelected(object item)
+        {
+            var offers = new ObservableCollection<Offer>
+            {
+                item as Offer
+            };
+
+            var navigationParameter = new Dictionary<string, object>
+            {
+                { "offers", offers }
+            };
+
+            await Shell.Current.GoToAsync($"offersView", navigationParameter);
         }
     }
 }
