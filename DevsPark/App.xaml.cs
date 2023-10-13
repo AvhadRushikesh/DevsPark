@@ -8,7 +8,19 @@ namespace DevsPark
         {
             InitializeComponent();
 
+            RegisterRoutes();
+            
             MainPage = serviceProvider.GetRequiredService<AppShell>();
+        }
+
+        private void RegisterRoutes()
+        {
+            Routing.RegisterRoute("featuredView", typeof(FeaturedView));
+            Routing.RegisterRoute("offersView", typeof(OffersView));
+
+            //Routing.RegisterRoute("frozenDrinksBar/details", typeof(FeaturedView));
+            //Routing.RegisterRoute("iceCreamWorld/details", typeof(OffersView));
+
         }
     }
 }
