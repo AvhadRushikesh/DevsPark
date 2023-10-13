@@ -279,7 +279,10 @@
                     Glyph="{x:Static utilities:IconFont.Beach_attractions}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent Title="Surf Lessons" ContentTemplate="{DataTemplate beachAttractions:SurfLessons}">
+            <ShellContent
+                Title="Surf Lessons"
+                ContentTemplate="{DataTemplate beachAttractions:SurfLessons}"
+                Shell.NavBarIsVisible="False">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
