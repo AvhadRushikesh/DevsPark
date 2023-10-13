@@ -54,6 +54,8 @@ namespace DevsPark
             builder.Services.AddTransient<FeaturedViewModel>();
             builder.Services.AddTransient<OffersViewModel>();
 
+            builder.Services.AddSingleton<OffersService>();
+
             return builder.Build();
         }
     }

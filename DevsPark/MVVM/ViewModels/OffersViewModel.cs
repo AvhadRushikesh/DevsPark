@@ -10,6 +10,7 @@ using DevsPark.MVVM.Models;
 
 namespace DevsPark.MVVM.ViewModels
 {
+    [QueryProperty(nameof(CompanyName), "name")]
     public partial class OffersViewModel : ObservableObject
     {
         [ObservableProperty]
