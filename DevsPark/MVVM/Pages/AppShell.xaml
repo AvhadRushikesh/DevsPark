@@ -169,21 +169,24 @@
         </DataTemplate>
     </Shell.MenuItemTemplate>
 
-    <FlyoutItem Title="Desert Mirage">
+    <FlyoutItem Title="Desert Mirage" Route="desertMirage">
         <FlyoutItem.Icon>
             <FontImageSource
                 FontFamily="Icons"
                 Glyph="{x:Static utilities:IconFont.Desert_mirage}"
                 Color="{StaticResource IconColor}" />
         </FlyoutItem.Icon>
-        <Tab Title="Night Adventures">
+        <Tab Title="Night Adventures" Route="nightAdventure">
             <Tab.Icon>
                 <FontImageSource
                     FontFamily="Icons"
                     Glyph="{x:Static utilities:IconFont.Night_adventures}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent Title="Night Dune Buggy" ContentTemplate="{DataTemplate nightAdventures:NightDuneBuggy}">
+            <ShellContent
+                Title="Night Dune Buggy"
+                ContentTemplate="{DataTemplate nightAdventures:NightDuneBuggy}"
+                Route="nightDuneBuggy">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -191,7 +194,10 @@
                         Color="{StaticResource IconColor}" />
                 </ShellContent.Icon>
             </ShellContent>
-            <ShellContent Title="Star Gazing" ContentTemplate="{DataTemplate nightAdventures:StarGazing}">
+            <ShellContent
+                Title="Star Gazing"
+                ContentTemplate="{DataTemplate nightAdventures:StarGazing}"
+                Route="starGazing">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -200,14 +206,17 @@
                 </ShellContent.Icon>
             </ShellContent>
         </Tab>
-        <Tab Title="Oasis Fun">
+        <Tab Title="Oasis Fun" Route="oasisFun">
             <Tab.Icon>
                 <FontImageSource
                     FontFamily="Icons"
                     Glyph="{x:Static utilities:IconFont.Oasis_fun}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent Title="Camel Rides" ContentTemplate="{DataTemplate oasisFun:CamelRides}">
+            <ShellContent
+                Title="Camel Rides"
+                ContentTemplate="{DataTemplate oasisFun:CamelRides}"
+                Route="camelRides">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -215,7 +224,10 @@
                         Color="{StaticResource IconColor}" />
                 </ShellContent.Icon>
             </ShellContent>
-            <ShellContent Title="Oasis Pools" ContentTemplate="{DataTemplate oasisFun:OasisPools}">
+            <ShellContent
+                Title="Oasis Pools"
+                ContentTemplate="{DataTemplate oasisFun:OasisPools}"
+                Route="oasisPools">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -226,21 +238,24 @@
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Frozen">
+    <FlyoutItem Title="Frozen" Route="frozen">
         <FlyoutItem.Icon>
             <FontImageSource
                 FontFamily="Icons"
                 Glyph="{x:Static utilities:IconFont.Frozen_kingdom}"
                 Color="{StaticResource IconColor}" />
         </FlyoutItem.Icon>
-        <Tab Title="Icy Treats">
+        <Tab Title="Icy Treats" Route="icyTreats">
             <Tab.Icon>
                 <FontImageSource
                     FontFamily="Icons"
                     Glyph="{x:Static utilities:IconFont.Icy_treats}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent Title="Frozen Drinks Bar" ContentTemplate="{DataTemplate icyTreats:FrozenDrinksBar}">
+            <ShellContent
+                Title="Frozen Drinks Bar"
+                ContentTemplate="{DataTemplate icyTreats:FrozenDrinksBar}"
+                Route="frozenDrinksBar">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -248,7 +263,10 @@
                         Color="{StaticResource IconColor}" />
                 </ShellContent.Icon>
             </ShellContent>
-            <ShellContent Title="Ice Cream World" ContentTemplate="{DataTemplate icyTreats:IceCreamWorld}">
+            <ShellContent
+                Title="Ice Cream World"
+                ContentTemplate="{DataTemplate icyTreats:IceCreamWorld}"
+                Route="iceCreamWorld">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -257,14 +275,17 @@
                 </ShellContent.Icon>
             </ShellContent>
         </Tab>
-        <Tab Title="Snow Activities">
+        <Tab Title="Snow Activities" Route="snowActivities">
             <Tab.Icon>
                 <FontImageSource
                     FontFamily="Icons"
                     Glyph="{x:Static utilities:IconFont.Snow_activities}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent Title="Ice Sculptures" ContentTemplate="{DataTemplate snowActivities:IceSculptures}">
+            <ShellContent
+                Title="Ice Sculptures"
+                ContentTemplate="{DataTemplate snowActivities:IceSculptures}"
+                Route="iceSculptures">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -272,7 +293,10 @@
                         Color="{StaticResource IconColor}" />
                 </ShellContent.Icon>
             </ShellContent>
-            <ShellContent Title="Snow Boarding" ContentTemplate="{DataTemplate snowActivities:Snowboarding}">
+            <ShellContent
+                Title="Snow Boarding"
+                ContentTemplate="{DataTemplate snowActivities:Snowboarding}"
+                Route="snowBoarding">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -283,21 +307,24 @@
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Tropical Paradise">
+    <FlyoutItem Title="Tropical Paradise" Route="tropicalParadise">
         <FlyoutItem.Icon>
             <FontImageSource
                 FontFamily="Icons"
                 Glyph="{x:Static utilities:IconFont.Tropical_paradise}"
                 Color="{StaticResource IconColor}" />
         </FlyoutItem.Icon>
-        <Tab Title="Beach Attractions">
+        <Tab Title="Beach Attractions" Route="beachAttractions">
             <Tab.Icon>
                 <FontImageSource
                     FontFamily="Icons"
                     Glyph="{x:Static utilities:IconFont.Beach_attractions}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent Title="Surf Lessons" ContentTemplate="{DataTemplate beachAttractions:SurfLessons}">
+            <ShellContent
+                Title="Surf Lessons"
+                ContentTemplate="{DataTemplate beachAttractions:SurfLessons}"
+                Route="surfLessons">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -305,7 +332,10 @@
                         Color="{StaticResource IconColor}" />
                 </ShellContent.Icon>
             </ShellContent>
-            <ShellContent Title="Wave Pool" ContentTemplate="{DataTemplate beachAttractions:WavePool}">
+            <ShellContent
+                Title="Wave Pool"
+                ContentTemplate="{DataTemplate beachAttractions:WavePool}"
+                Route="wavePool">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -314,14 +344,17 @@
                 </ShellContent.Icon>
             </ShellContent>
         </Tab>
-        <Tab Title="Jungle Adventures">
+        <Tab Title="Jungle Adventures" Route="jungleAdventures">
             <Tab.Icon>
                 <FontImageSource
                     FontFamily="Icons"
                     Glyph="{x:Static utilities:IconFont.Jungle_adventures}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent Title="Animal Shows" ContentTemplate="{DataTemplate jungleAdventures:AnimalShows}">
+            <ShellContent
+                Title="Animal Shows"
+                ContentTemplate="{DataTemplate jungleAdventures:AnimalShows}"
+                Route="animalShows">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
@@ -329,7 +362,10 @@
                         Color="{StaticResource IconColor}" />
                 </ShellContent.Icon>
             </ShellContent>
-            <ShellContent Title="Zip Lines" ContentTemplate="{DataTemplate jungleAdventures:ZipLines}">
+            <ShellContent
+                Title="Zip Lines"
+                ContentTemplate="{DataTemplate jungleAdventures:ZipLines}"
+                Route="zipLines">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
