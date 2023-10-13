@@ -10,8 +10,8 @@ using DevsPark.MVVM.Models;
 
 namespace DevsPark.MVVM.ViewModels
 {
-    [QueryProperty(nameof(CompanyName), "name")]
-    public partial class OffersViewModel : ObservableObject
+    //[QueryProperty(nameof(CompanyName), "name")]
+    public partial class OffersViewModel : ObservableObject, IQueryAttributable
     {
         [ObservableProperty]
         ObservableCollection<Offer> offers;
@@ -31,6 +31,13 @@ namespace DevsPark.MVVM.ViewModels
         public async Task Back()
         {
             await Shell.Current.DisplayAlert("Back pressed", "Back pressed", "OK");
+        }
+
+        public void ApplyQueryAttributes(IDictionary<string, object> query)
+        {
+            var companyId = query["id"].ToString();
+            CompanyName = Uri.UnescapeDataString(query["name"].ToString());
+            Offers = new ObservableCollection<Offer>(offersService.GetOffers(int.Parse(companyId)));
         }
     }
 }
