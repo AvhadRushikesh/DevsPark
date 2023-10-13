@@ -12,7 +12,25 @@
     xmlns:snowActivities="clr-namespace:DevsPark.MVVM.Pages.Frozen.SnowActivities"
     xmlns:utilities="clr-namespace:DevsPark.Utilities"
     FlyoutBackgroundImage="park_background.png"
-    FlyoutBackgroundImageAspect="AspectFill">
+    FlyoutBackgroundImageAspect="AspectFill"
+    FlyoutIsPresented="{Binding IsFlyoutOpen}">
+
+    <Shell.TitleView>
+        <Grid ColumnDefinitions=".8*,.2*">
+            <Image
+                HorizontalOptions="Center"
+                Source="logo.png"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Column="1"
+                FontFamily="Icons"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="{x:Static utilities:IconFont.Search}"
+                TextColor="#929292"
+                VerticalOptions="Center" />
+        </Grid>
+    </Shell.TitleView>
 
     <Shell.FlyoutBackdrop>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -279,10 +297,7 @@
                     Glyph="{x:Static utilities:IconFont.Beach_attractions}"
                     Color="{StaticResource IconColor}" />
             </Tab.Icon>
-            <ShellContent
-                Title="Surf Lessons"
-                ContentTemplate="{DataTemplate beachAttractions:SurfLessons}"
-                Shell.NavBarIsVisible="False">
+            <ShellContent Title="Surf Lessons" ContentTemplate="{DataTemplate beachAttractions:SurfLessons}">
                 <ShellContent.Icon>
                     <FontImageSource
                         FontFamily="Icons"
