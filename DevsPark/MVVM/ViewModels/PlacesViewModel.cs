@@ -130,14 +130,15 @@ namespace DevsPark.MVVM.ViewModels
             //await Shell.Current.GoToAsync("details");
 
 
-            await Shell.Current.GoToAsync("featuredView");
+            await Shell.Current.GoToAsync($"featuredView");
             Shell.Current.FlyoutIsPresented = false;
         }
 
         [RelayCommand]
         public async Task Search()
         {
-            throw new NotImplementedException();
+            await Shell.Current.GoToAsync("//search");
+            //searchView
         }
     }
 }

@@ -49,6 +49,7 @@ namespace DevsPark
 
             builder.Services.AddTransient<FeaturedView>();
             builder.Services.AddTransient<OffersView>();
+            builder.Services.AddTransient<SearchView>();
 
             builder.Services.AddTransient<PlacesViewModel>();
             builder.Services.AddTransient<FeaturedViewModel>();

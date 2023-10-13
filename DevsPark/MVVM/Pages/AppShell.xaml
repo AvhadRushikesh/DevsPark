@@ -9,6 +9,7 @@
     xmlns:local="clr-namespace:DevsPark"
     xmlns:nightAdventures="clr-namespace:DevsPark.MVVM.Pages.DesertMirage.NightAdventures"
     xmlns:oasisFun="clr-namespace:DevsPark.MVVM.Pages.DesertMirage.OasisFun"
+    xmlns:pages="clr-namespace:DevsPark.MVVM.Pages"
     xmlns:snowActivities="clr-namespace:DevsPark.MVVM.Pages.Frozen.SnowActivities"
     xmlns:utilities="clr-namespace:DevsPark.Utilities"
     FlyoutBackgroundImage="park_background.png"
@@ -28,7 +29,12 @@
                 HorizontalOptions="Center"
                 Text="{x:Static utilities:IconFont.Search}"
                 TextColor="#929292"
-                VerticalOptions="Center" />
+                VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SearchCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+
         </Grid>
     </Shell.TitleView>
 
@@ -375,6 +381,12 @@
             </ShellContent>
         </Tab>
     </FlyoutItem>
+
+    <ShellContent
+        Title="Search"
+        ContentTemplate="{DataTemplate pages:SearchView}"
+        FlyoutItemIsVisible="False"
+        Route="search" />
 
     <MenuItem Command="{Binding HelpCommand}" Text="Help">
         <MenuItem.IconImageSource>
